@@ -14,7 +14,6 @@ struct Arrow {
 	raylib::Color color{};
 	void Draw() {
 		float arrowangle = atan2(endPos.y - startPos.y, endPos.x - startPos.x) * RAD2DEG;
-		std::cout << arrowangle << '\n';
 		float oang = 180 - angle;
 		raylib::Vector2 lineend{ endPos + raylib::Vector2{cos(DEG2RAD * (oang + arrowangle)), sin(DEG2RAD * (oang + arrowangle))}*length };
 		raylib::Vector2 lineend2{ endPos + raylib::Vector2{cos(DEG2RAD * (-oang + arrowangle)), sin(DEG2RAD * (-oang + arrowangle))}*length };
