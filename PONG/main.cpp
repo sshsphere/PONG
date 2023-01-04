@@ -1,7 +1,8 @@
-#include "raylib-cpp.hpp"
+#include "../raylibcpp/include/raylib-cpp.hpp"
+#include "../glm/glm/glm.hpp"
 #include <iostream> 
 #include <string>
-#include <glm/glm.hpp>
+
 constexpr int g_Width = 800;
 constexpr int g_Height = 450;
 constexpr float render_scale = 0.01f;
